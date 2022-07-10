@@ -26,13 +26,14 @@ body {
 
 .logo {
   font-family: "Poppins", sans-serif;
+  font-size: 1rem;
 }
 
 .line {
   width: 35px;
   height: 3px;
   background-color: white;
-  margin: 7px 0;
+  margin: 5px 0;
 }
 
 nav {
@@ -135,6 +136,36 @@ a:visited {
 
 .deskTopNav {
   display: none;
+}
+
+/* Hero section */
+
+.heading1 {
+  max-width: 15ch;
+  margin-inline: 2rem;
+  margin-top: 8rem;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  line-height: 50px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.headingSmaller {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  opacity: var(--medium-emph-text);
+  letter-spacing: 1px;
+}
+
+.heroSubText {
+  max-width: 30ch;
+  font-family: "Poppins", serif;
+  margin-inline: 2rem;
+  margin-top: 2rem;
+  opacity: var(--medium-emph-text);
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 /* Desktop query */
