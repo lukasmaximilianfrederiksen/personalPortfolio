@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+:root {
+  /* Colorschemes */
+  --bg-color: #111111;
+  --high-emph-text: 87%;
+  --medium-emph-text: 60%;
+  --text-color: white;
+
+  /* Font variables */
+
+--large-header: font-family: 'Playfair Display', serif;
+--small-header: font-family: 'Poppins', sans-serif;
+--paragraph-text: font-family: 'Poppins', sans-serif;
+}
+
+body {
+  
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  overflow: hidden;
+}
+
+nav {
+ padding-inline: 2rem;
+ padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  min-width: 100vw;
+  z-index: 9999;
+  background-color: var(--bg-color);
+  top: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--text-color);
+} 
+
+
+.openMenu {
+  
+  text-decoration: none;
+  color: white;
+  right: 100px;
+ font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.openMenu:hover {
+    cursor: pointer;
+}
+
+.closeMenu {
+      position: absolute;
+ 
+  text-decoration: none;
+  color: white;
+  top: 1rem;
+  right: 3rem;
+ font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  z-index: 99;
+}
+
+.closeMenu:hover {
+    cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  transform: translateX(-100%);
+}
+.menu .button {
+  color: white;
+}
+.ul {
+  position: absolute;
+  left: 20%;
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  align-items: left;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.ul li {
+  margin: 20px 0;
+  z-index: 2;
+}
+.ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 2s;
+ font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  mix-blend-mode: difference;
+}
+
+
+.deskTopNav {
+    display: none;
+}
+
+
+/* Desktop query */
+
+@media (min-width: 992px) {
+  /* body {
+    margin-inline: 10rem;
+  } */
+
+  .deskTopNav {
+    display: flex;
+}
+
+.menuKnap {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+
+.desktopUl {
+ 
+ 
+}
+
+
+
+
+}
