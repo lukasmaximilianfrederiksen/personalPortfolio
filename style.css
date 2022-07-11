@@ -7,7 +7,7 @@
 :root {
   /* Colorschemes */
   --bg-color: #111111;
-  --high-emph-text: 87%;
+  --high-emph-text: 95%;
   --medium-emph-text: 60%;
   --text-color: white;
 
@@ -36,7 +36,7 @@ body {
 }
 
 .line {
-  width: 35px;
+  width: 30px;
   height: 3px;
   background-color: white;
   margin: 5px 0;
@@ -138,6 +138,24 @@ a:visited {
   text-transform: uppercase;
   font-weight: 500;
   mix-blend-mode: difference;
+  position: relative;
+}
+
+.deskNavLink {
+}
+
+.deskNavLink a::after {
+  top: 65%;
+  height: 2px;
+  width: 0%;
+  left: 5%;
+  background-color: rgba(255, 245, 245, 0.6);
+  transition: 0.5s ease all 0.3s;
+}
+
+.deskNavLink:hover a::after {
+  width: 90%;
+  transition: 0.3s ease all;
 }
 
 .deskTopNav {
@@ -177,10 +195,27 @@ a:visited {
   margin-bottom: 12rem;
 }
 
-/* Desktop query */
+.scrollDownIcon {
+}
 
 .projectWrapper {
   margin-inline: 2rem;
+  padding-top: 0.5rem;
+}
+
+.projectWrapper h3 {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  opacity: var(--high-emph-text);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.projectCardOverview {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  opacity: var(--medium-emph-text);
+  font-weight: 500;
 }
 
 h2 {
@@ -188,6 +223,13 @@ h2 {
   font-size: var(--section-header-size);
   font-weight: 500;
   letter-spacing: 2px;
+  padding-bottom: 2rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 .projectGrid {
   display: flex;
@@ -199,6 +241,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  margin-block: 2rem;
 }
 
 .projectGrid img {
@@ -210,6 +253,36 @@ h2 {
   filter: drop-shadow(0px 14px 13px #000);
 }
 
+/* ---------------------------------Footer section ----------------------------------*/
+
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.footerHeader {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+.footerParagraph {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  opacity: var(--medium-emph-text);
+}
+
+.footerIcons {
+  display: flex;
+  gap: 2rem;
+}
+
+/* ---------------------------------Desktop query ----------------------------------*/
+
 @media (min-width: 992px) {
   main {
     margin-inline: 10rem;
@@ -217,6 +290,8 @@ h2 {
 
   .deskTopNav {
     display: flex;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
   }
 
   .menuKnap {
@@ -226,7 +301,58 @@ h2 {
   .menu {
     display: none;
   }
-
   .desktopUl {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .desktopUl li {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-inline: 1rem;
+  }
+
+  .desktopUl li::after {
+    padding-inline: ;
+  }
+
+  .deskNavLink {
+    display: inline-block;
+    position: relative;
+    color: rgb(255, 255, 255);
+  }
+
+  .deskNavLink::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .deskNavLink:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .singleProject {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 10rem;
+    margin-block: 2rem;
+  }
+
+  .projectImage {
+    grid-column: 1;
+  }
+  .projectCardWrapper {
+    grid-column: 2;
+    width: 50ch;
   }
 }
