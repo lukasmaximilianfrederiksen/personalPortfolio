@@ -21,6 +21,12 @@
   --section-header-size: 32px;
   --subsection-header-size: 24px;
   --paragraph-size: 16px;
+
+  /* Layout */
+
+  --mobile-margin: 2rem;
+  --tablet-margin: 5rem;
+  --desktop-margin: 10rem;
 }
 
 body {
@@ -372,7 +378,7 @@ p {
 }
 
 .roleWrapper {
-  margin-top: -1rem;
+  margin-top: -3rem;
   grid-column: 1;
   grid-row: 2;
 }
@@ -420,12 +426,13 @@ h4 {
 /* ------------------------------------Process section------------------------------ */
 
 .procesSection {
-  margin-inline: 2rem;
+  margin-left: 2rem;
   margin-top: 5rem;
+  max-width: 35ch;
 }
 .numberFlexWrap {
   top: -2rem;
-  left: 3rem;
+  left: 4rem;
 }
 
 .textWrap span {
