@@ -253,6 +253,199 @@ p {
   filter: drop-shadow(0px 14px 13px #000);
 }
 
+/* ---------------------------------single project section ----------------------------------*/
+
+.headerCenterWrapper {
+  display: flex;
+  justify-content: center;
+}
+.singleProjectHeader {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.singleProjectHeader h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  line-height: 50px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.singleProjectSubHeader {
+  max-width: 40ch;
+  font-family: "Poppins", serif;
+  text-align: center;
+  margin-top: 3rem;
+  opacity: var(--medium-emph-text);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 6rem;
+}
+
+.heroSectionSingleProject {
+  height: 40vh;
+
+  background-color: #7e8c73;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroSectionSingleProject img {
+  height: 40vh;
+}
+
+.projectIntroWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectOverviewWrapper {
+  margin-inline: 2rem;
+  margin-bottom: 4rem;
+}
+
+.projectOverviewWrapper h2 {
+  font-family: "Playfair Display", serif;
+  font-size: var(--section-header-size);
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.projectRecap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 100px;
+  margin-inline: 2rem;
+}
+
+.projectRecap > p {
+  font-family: "Poppins", serif;
+  opacity: var(--medium-emph-text);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.durationWrapper > p {
+  font-family: "Poppins", serif;
+  opacity: var(--medium-emph-text);
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.roleWrapper > p {
+  font-family: "Poppins", serif;
+  opacity: var(--medium-emph-text);
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding-block: 5px;
+}
+
+.toolsWrapper > p {
+  font-family: "Poppins", serif;
+  opacity: var(--medium-emph-text);
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding-block: 5px;
+}
+
+.durationWrapper {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.toolsWrapper {
+  grid-column: 2;
+  grid-row: span 2;
+}
+
+.roleWrapper {
+  margin-top: -1rem;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+h4 {
+  font-family: "Poppins", serif;
+  opacity: var(--high-emph-text);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.theChallengeWrapper h2 {
+  font-family: "Playfair Display", serif;
+  font-size: var(--section-header-size);
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+.theChallengeWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 2rem;
+}
+
+.coreChallengeWrapper {
+  margin-inline: 2rem;
+  margin-top: 5rem;
+}
+
+.coreChallengeWrapper p {
+  padding-block: 0.5rem;
+}
+
+.coreChallengeWrapper span {
+  font-size: 2rem;
+  text-align: end;
+  padding-right: 1rem;
+  padding-block: 10rem;
+}
+
+/* ------------------------------------Process section------------------------------ */
+
+.procesSection {
+  margin-inline: 2rem;
+  margin-top: 5rem;
+}
+.numberFlexWrap {
+  top: -2rem;
+  left: 3rem;
+}
+
+.textWrap span {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.numberFlexWrap {
+  position: absolute;
+  /* transform: translateX(5rem);
+  transform: translateY(1rem); */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.textWrap p {
+  font-size: 0.875 rem;
+  max-width: 35ch;
+}
 /* ---------------------------------Footer section ----------------------------------*/
 
 .footerWrapper {
@@ -279,13 +472,14 @@ p {
 .footerIcons {
   display: flex;
   gap: 2rem;
+  margin-top: 1rem;
 }
 
 /* ---------------------------------Desktop query ----------------------------------*/
 
 @media (min-width: 992px) {
   main {
-    margin-inline: 10rem;
+    /* margin-inline: 10rem; */
   }
 
   .deskTopNav {
@@ -339,6 +533,10 @@ p {
   .deskNavLink:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+
+  .deskNavLink a {
+    color: white;
   }
 
   .singleProject {
