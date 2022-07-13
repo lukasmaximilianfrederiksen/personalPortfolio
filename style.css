@@ -295,6 +295,7 @@ p {
 
 .heroSectionSingleProject {
   height: 40vh;
+  overflow: hidden;
 
   background-color: #7e8c73;
   display: flex;
@@ -303,7 +304,7 @@ p {
 }
 
 .heroSectionSingleProject img {
-  height: 40vh;
+  width: 34rem;
 }
 
 .projectIntroWrapper {
@@ -378,7 +379,7 @@ p {
 }
 
 .roleWrapper {
-  margin-top: -3rem;
+  margin-top: -2rem;
   grid-column: 1;
   grid-row: 2;
 }
@@ -428,13 +429,23 @@ h4 {
 .procesSection {
   margin-left: 2rem;
   margin-top: 5rem;
-  max-width: 35ch;
+  overflow: hidden;
 }
+
+.procesSection p {
+  max-width: 45ch;
+}
+
 .numberFlexWrap {
   top: -2rem;
   left: 4rem;
+  overflow: hidden;
 }
 
+.numberFlexWrap p {
+  font-family: "Poppins", sans-serif;
+  opacity: var(--medium-emph-text);
+}
 .textWrap span {
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
@@ -447,12 +458,25 @@ h4 {
   position: relative;
   display: flex;
   flex-direction: column;
+  max-width: 35ch;
 }
 
 .textWrap p {
   font-size: 0.875 rem;
   max-width: 35ch;
 }
+
+.solutionImageWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.solutionImageWrapper img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
 /* ---------------------------------Footer section ----------------------------------*/
 
 .footerWrapper {
