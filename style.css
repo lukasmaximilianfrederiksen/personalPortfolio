@@ -6,7 +6,7 @@
 
 :root {
   /* Colorschemes */
-  --bg-color: #111111;
+  --bg-color: #1b1b1b;
   --high-emph-text: 95%;
   --subheader-text: 90%;
   --medium-emph-text: 60%;
@@ -22,7 +22,7 @@
   --large-header-size: clamp(3rem, 1.6942rem + 5.0465vw, 5.75rem);
   --heading-smaller: clamp(1.725rem, 0.8845rem + 1.296vw, 2rem);;
   --section-header-size: clamp(2.3rem, 1.4502rem + 2.1248vw, 3rem);
-  --subsection-header-size: clamp(1.5rem, 1.0876rem + 1.5936vw, 2.5rem);
+  --subsection-header-size: clamp(1.5rem, 1.0876rem + 1.1936vw, 2rem);
   --h1-subtext: clamp(1rem, 0.7251rem + 1.0624vw, 1.2rem);
   --paragraph-size: clamp(1rem, 0.9313rem + 0.2256vw, 1.05rem);
   --navbar-size: clamp(1rem, 0.9313rem + 0.2656vw, 1.25rem);
@@ -261,7 +261,7 @@ p {
 }
 
 .projectGrid img {
-  max-width: 85vw;
+  /* width: 85vw; */
   filter: drop-shadow(0px 14px 13px #000);
 }
 
@@ -281,6 +281,10 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.singleProject img {
+  max-width: 380px;
 }
 
 .singleProjectHeader h1 {
@@ -544,8 +548,9 @@ h4 {
 
 }
 
-
-
+#projectsSection {
+scroll-margin-top: 200px; 
+}
 
 
 /* ---------------------------------Footer section ----------------------------------*/
@@ -582,6 +587,10 @@ h4 {
  
 }
 
+  .frontHeroContainer {
+    margin-inline: var(--mobile-margin);
+  }
+
 @media (min-width: 610px) {
 
 .processCenterwrap {
@@ -610,6 +619,10 @@ h4 {
     max-width: 65ch;
   }
 
+  .singleProject img {
+  max-width: 500px;
+}
+
   .projectIntroWrapper {
     margin-inline: var(--tablet-margin);
   }
@@ -622,11 +635,21 @@ h4 {
   max-width: 800px;
 }
 
+.projectWrapper {
+  margin-inline: var(--tablet-margin);
+  padding-top: 0.5rem;
+}
+
   .theChallengeWrapper {
  
     
   }
 
+  .projectGrid img {
+ 
+  
+  filter: drop-shadow(0px 14px 13px #000);
+}
 
   .challengeContainer {
       display: grid;
@@ -703,6 +726,13 @@ grid-template-columns: 1fr ;
     display: flex;
     justify-content: space-between;
   }
+
+
+  .projectWrapper {
+  margin-inline: var(--desktop-margin);
+  padding-top: 0.5rem;
+}
+
 
   .desktopUl li {
     display: flex;
