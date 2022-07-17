@@ -30,8 +30,8 @@
   /* Layout */
 
   --mobile-margin: 2rem;
-  --tablet-margin: 5rem;
-  --desktop-margin: 10rem;
+  --tablet-margin: 4em;
+  --desktop-margin: 8rem;
 }
 
 body {
@@ -99,6 +99,9 @@ a:visited {
   cursor: pointer;
 }
 
+button {
+  display: none;
+}
 .closeMenu {
   position: absolute;
 
@@ -339,6 +342,11 @@ grid-template-columns: 1fr ;
   margin-inline: var(--mobile-margin);
 }
 
+  .procesSection {
+  overflow: hidden;
+
+  margin-top: 4rem;
+}
 
 .projectIntroWrapper h2 {
   font-family: "Playfair Display", serif;
@@ -474,7 +482,7 @@ h4 {
 }
 .procesIntro {
   margin-bottom: 4rem;
-  margin-top: 6rem;
+  
 
 }
 
@@ -595,7 +603,7 @@ scroll-margin-top: 200px;
 
 .processCenterwrap {
   display: flex;
-  justify-content: center;
+  
 }
 
 }
@@ -716,6 +724,69 @@ grid-template-columns: 1fr ;
     display: none;
   }
 
+  .frontProjectTextContainer {
+ display: flex;
+flex-direction: column;
+justify-content: space-between;
+  }
+
+
+button {
+  display: flex;
+  background-color: var(--bg-color);
+  border: none;
+  color: white;
+  font-family: var(--paragraph-text);
+  font-size: var(--paragraph-size);
+  text-align: center;
+  /* padding: 15px 40px; */
+  cursor: pointer;
+  letter-spacing: 2px;
+  position:relative;
+  overflow:hidden;
+  align-items: center;
+}
+
+button svg {
+  margin-left: 4px;
+}
+
+.circle {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.168);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  transition: all .3s;
+}
+
+.circle svg {
+  margin-left: -1px;
+  transition: all .3s;
+}
+
+
+.circle svg:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  background : #fff;
+  left: 45%;
+  height: 2px;
+  bottom: 5px;
+  transition: all .3s;
+  opacity: 0.7;
+}
+
+button:hover:before {
+  width: 100%;
+  left:0;
+ 
+}
+
   .intro {
     padding-bottom: 6rem;
   }
@@ -773,6 +844,12 @@ grid-template-columns: 1fr ;
     color: white;
   }
 
+.numberFlexWrap {
+  top: -2.3rem;
+  left: 6rem;
+  overflow: hidden;
+}
+
 
    .frontHeroContainer {
     margin-inline: var(--desktop-margin);
@@ -793,6 +870,11 @@ grid-template-columns: 1fr ;
   align-items: center;
 }
 
+.procesContainer {
+
+}
+
+
 
   .singleProject {
     display: grid;
@@ -812,7 +894,7 @@ grid-template-columns: 1fr ;
   .procesSection {
   overflow: hidden;
   margin-inline: var(--desktop-margin);
-  margin-top: 7rem;
+  margin-top: 4rem;
 }
 
 .gridContainer {
@@ -836,6 +918,11 @@ grid-template-columns: 1fr ;
     
     
   }
+
+  .textWrap span {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+}
 
 
   .processGroupWrapper {
@@ -863,6 +950,7 @@ grid-template-columns: 1fr;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 150px;
+    margin-left: -7rem;
   }
 
 
@@ -918,7 +1006,9 @@ nav {
   }
 
 
-
+.processCenterwrap {
+  justify-content: center;
+}
 
 .projectIntroWrapper {
   grid-template-columns: 2fr 1fr;
