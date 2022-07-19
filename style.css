@@ -29,7 +29,7 @@
 
   /* Layout */
 
-  --mobile-margin: 2rem;
+  --mobile-margin: 0.5rem;
   --tablet-margin: 4em;
   --desktop-margin: 8rem;
 }
@@ -160,6 +160,18 @@ a:visited {
 .deskNavLink {
 }
 
+.circle {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.075);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  transition: all 0.2s;
+}
+
 .deskNavLink a::after {
   top: 65%;
   height: 2px;
@@ -214,7 +226,7 @@ a:visited {
 }
 
 .projectWrapper {
-  margin-inline: 2rem;
+  margin-inline: 1rem;
   padding-top: 0.5rem;
 }
 
@@ -573,7 +585,7 @@ h4 {
 
 .numberFlexWrap {
   top: -2rem;
-  left: 4rem;
+  left: 3rem;
   overflow: hidden;
 }
 
