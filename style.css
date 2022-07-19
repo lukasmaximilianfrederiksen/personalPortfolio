@@ -1092,6 +1092,13 @@ h4 {
     justify-content: center;
     margin-inline: 10rem;
   }
+
+  .singleProject {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    margin-block: 3rem;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -1149,7 +1156,7 @@ h4 {
 
   .singleProject {
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10rem;
     margin-block: 3rem;
   }
