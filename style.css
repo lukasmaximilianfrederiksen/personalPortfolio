@@ -312,13 +312,12 @@ p {
   text-align: center;
 }
 
-.abouth1 h1 {
+.abouth1 {
   font-family: "Playfair Display", serif;
-  font-size: 4rem;
+  font-size: var(--section-header-size);
   line-height: 50px;
   letter-spacing: 4px;
   font-weight: 600;
-  text-align: center;
 }
 
 .moonchallenge h1 {
