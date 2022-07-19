@@ -317,8 +317,8 @@ p {
 }
 
 .singleProjectHeader h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 4rem;
+  font-family: var(--section-header-size)
+  font-size: 3rem;
   line-height: 65px;
   letter-spacing: 4px;
   font-weight: 600;
