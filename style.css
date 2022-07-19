@@ -616,7 +616,7 @@ h4 {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 35ch;
+  max-width: 30ch;
 }
 
 .textWrap p {
