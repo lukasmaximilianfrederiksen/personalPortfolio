@@ -965,6 +965,7 @@ h4 {
   .heroSubText {
     max-width: 50ch;
     margin-top: 2rem;
+    line-height: 30px;
   }
 
   .heroSectionSingleProject {
