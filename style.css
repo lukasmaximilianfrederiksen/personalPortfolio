@@ -232,9 +232,6 @@ a:visited {
   font-weight: 300;
 }
 
-.scrollDownIcon {
-}
-
 .projectWrapper {
   margin-inline: 1rem;
   padding-top: 0.5rem;
@@ -919,9 +916,9 @@ h4 {
     margin-inline: 1rem;
   }
 
-  .desktopUl li::after {
+  /* .desktopUl li::after {
     padding-inline: ;
-  }
+  } */
 
   .deskNavLink {
     display: inline-block;
