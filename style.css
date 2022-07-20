@@ -224,8 +224,8 @@ a:visited {
 .heroSubText {
   max-width: 35ch;
   font-family: "Poppins", serif;
-  line-height: 30px;
-  margin-top: 1rem;
+  line-height: 25px;
+  margin-top: 1.8rem;
   opacity: var(--medium-emph-text);
   font-size: var(--h1-subtext);
   letter-spacing: 1px;
